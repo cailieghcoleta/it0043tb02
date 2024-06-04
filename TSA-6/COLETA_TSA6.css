@@ -1,206 +1,130 @@
-.aot_container {
-   width: 90vw;
-   border: 1px solid black;
-   margin: 50px auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
- }
-
- .item{
-    border: 2px solid rgb(5, 112, 33);
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: Roboto Slab;
+   box-sizing: border-box;
+}
+.aot_container{
+    max-width: 1200px;
+    width: 90vw;
     padding: 20px;
-    text-align: center;
- }
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 
- img{
-    width: 128px;
- }
- 
- .name{
-    font-size: 2.5rem;
- }
+}
 
- .role{
-    font-size: 1.5rem;
- }
- 
- p{
-    display: none;
-    display: none;
-    align-self: center;
-    text-align: center;
-    margin: 0px auto;
-    font-weight: bold;
-    font-family: "Roboto Slab", serif;
-    color: white;
-    font-size: 30px;
-    filter: drop-shadow(3px 3px 3px black);
-    flex-grow: 0.5;
- }
- 
- 
- .pokeball{
-    display: none;
-    width: 175px;
-    height: 175px;
-    align-self: center;
- }
- 
- 
- .pokemon{
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
- }
- 
- 
- .jigglypuff{
-    background-color: rgb(246, 174, 216);
- }
- .caterpie{
-    background-color: rgb(68, 150, 55);
- }
- .bullbasaur{
-    background-color: rgb(27, 98, 36);
- }
- .mankey{
-    background-color: rgb(185, 155, 116);
- }
- .meowth{
-    background-color: rgb(177, 159, 136);
- }
- .mew{
-    background-color: rgb(240, 164, 164);
- }
- .pidgey{
-    background-color: rgb(214, 174, 63);
- }
- .pikachu{
-    background-color: rgb(248, 236, 60);
- }
- .rattata{
-    background-color: rgb(169, 107, 199);
- }
- .weedle{
-    background-color: rgb(147, 98, 195);
- }
- .zubat{
-    background-color: rgb(117, 120, 220);
- }
- .squirtle{
-    background-color: rgb(151, 224, 238);
- }
- 
- 
- .background{
-    object-fit: cover;
-    align-content: center;
- 
- 
-    background-position: center;
- 
- 
-    justify-content: center;
- }
- 
- 
- #box{
+.item{
+    border: 5px solid rgb(12, 58, 2);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    padding: 20px;
     display: flex;
-    flex: wrap;
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    transition: 1s ease-in-out;
- }
- 
- 
- @media(max-width:960px){
-   
-    .container{
-        justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    width: fit-content; 
+
+
+}
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.details img{
+    width: 128px;
+    border-radius: 25%;
+
+}
+
+
+.namerole{
+   font-size: 2.5rem;
+   font-weight: 700;
+   text-align: center;
+}
+
+.name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.role{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.desc{
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+#eren{
+    background-color: #285d28;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
+}
+
+#mikasa{
+    
+    background-color: #6a2222;
+    
+}
+
+#armin{
+    background-color: #c1b25e;
+    
+}
+
+#levi{
+    background-color: #7D88A4;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    
+}
+
+
+#annie{
+    background-color: #3b4c78;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+
+@media (max-width:768px){
+
+    .aot_container{
+        grid-template-columns: 1fr;
     }
-   
-    #box{
-        flex-direction: row;
-        margin: 0px auto;
-        width: 95%;
-        height: 200px;
-        justify-content: space-around;
+
+    #eren{
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-  
-    #box:hover{
-        background-image: url("https://i.pinimg.com/originals/71/31/77/713177e7b221e3d2570237268fd19c6e.gif");
-        background-repeat: repeat;
-        background-size: cover;
+
+    #annie{
+        grid-column: 1/2;
+        grid-row: 4/5;
+       
     }
- 
- 
-    .pokemon{
-        display: inline;
-        width: 175px;
-        height: 175px;
-        margin-left: 20px;
+
+    #levi{
+        grid-column: 1/2;
+        grid-row:5/6;
     }
-   
-    p{
-        flex-grow: 1;
-        display: inline;
-        align-self: center;
-        text-align: center;
-    }
- 
- 
-    .pokeball{
-        display:inline;
-    }
- 
- 
- }
- 
- 
- @media(max-width:650px){
-   
-    .container{
-        justify-content: center;
-    }
-   
-    #box{
-        flex-direction: column;
-        margin: 0px auto;
-        width: 95%;
-        height: 320px;
-        justify-content: space-around;
-    }
- 
- 
-    #box:hover{
-        background-image: url("https://i.pinimg.com/originals/72/51/23/72512323b7eb9405b94935b7d4fd9aeb.gif");
-        background-repeat: repeat;
-        background-size: cover;
-    }
-  
-    .pokemon{
-        display: block;
-        width: 245px;
-        height: 245px;
-        margin:0px auto;
-        padding-top: 20px;
-    }
-   
-    p{
-        margin-bottom: 20px;
-        display: inline;
-        align-self: center;
-        text-align: center;
-    }
- 
- 
-    .pokeball{
-        display:none;
-    }
- 
- 
- }
- 
+
+}
  
