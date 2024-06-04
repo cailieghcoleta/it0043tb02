@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-*{
-   margin: 0px;
-   padding: 0px;
-   font-family: Roboto Slab;
-   box-sizing: border-box;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
 }
-.aot_container{
+
+.aot_container {
     max-width: 1200px;
     width: 90vw;
     padding: 20px;
@@ -14,10 +15,9 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
-.item{
+.item {
     border: 5px solid rgb(12, 58, 2);
     border-radius: 50px;
     box-shadow: 5px 5px 5px black;
@@ -27,13 +27,11 @@
     gap: 20px;
     color: white;
     align-items: center;
-    width: fit-content; 
-
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
-
-.details{
+.details {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,90 +39,81 @@
     justify-content: center;
 }
 
-.details img{
+.details img {
     width: 128px;
     border-radius: 25%;
-
 }
 
-
-.namerole{
-   font-size: 2.5rem;
-   font-weight: 700;
-   text-align: center;
-}
-
-.name{
+.namerole, .name {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 }
 
-.role{
+.role {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.desc{
+.desc {
     font-size: 1.2rem;
     text-align: justify;
     line-height: 1.2;
 }
 
-#eren{
+#eren {
     background-color: #285d28;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
 
-#mikasa{
-    
+#mikasa {
     background-color: #6a2222;
-    
 }
 
-#armin{
+#armin {
     background-color: #c1b25e;
-    
 }
 
-#levi{
+#levi {
     background-color: #7D88A4;
-    grid-column: 2/4;
-    grid-row: 2/3;
-    
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
 }
 
-
-#annie{
+#annie {
     background-color: #3b4c78;
-    grid-column: 4/5;
-    grid-row: 1/3;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
 }
 
-
-@media (max-width:768px){
-
-    .aot_container{
+@media (max-width: 768px) {
+    .aot_container {
         grid-template-columns: 1fr;
     }
 
-    #eren{
-        grid-column: 1/2;
-        grid-row: 1/2;
+    #eren {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
 
-    #annie{
-        grid-column: 1/2;
-        grid-row: 4/5;
-       
+    #mikasa {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 
-    #levi{
-        grid-column: 1/2;
-        grid-row:5/6;
+    #armin {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
     }
 
+    #annie {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #levi {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
 }
- 
