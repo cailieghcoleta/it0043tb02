@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flexbox Demo</title>
+   <link rel="stylesheet" href="tsa8.css">
+</head>
+<body>
+   <div class="flexbox-container">
+       <div class="flexbox-item" id="box1">1</div>
+       <div class="flexbox-item" id="box2">2</div>
+       <div class="flexbox-item" id="box3">3</div>
+   </div>
+   <div class="flexbox-controls">
+       <button id="resetBtn" class="bn632-hover">Reset Flexbox</button>
+       <div class="control-group">
+           <label for="gap" class="">Gap</label>
+           <input type="number" id="gap" value="0">
+       </div>
+       <div class="control-group">
+           <label>Flex Direction</label>
+           <button id="flexRow" class="buttonhover" data-direction="row">Row</button>
+           <button id="flexColumn" class="buttonhover" data-direction="column">Column</button>
+       </div>
+       <div class="control-group">
+           <label>Justify Content</label>
+           <button id="justifyStart" class="buttonhover" data-justify="flex-start">Start</button>
+           <button id="justifyCenter" class="buttonhover" data-justify="center">Center</button>
+           <button id="justifyEnd" class="buttonhover" data-justify="flex-end">End</button>
+           <button id="justifySpaceBetween" class="buttonhover" data-justify="space-between">Space Between</button>
+           <button id="justifySpaceAround" class="buttonhover" data-justify="space-around">Space Around</button>
+           <button id="justifySpaceEvenly" class="buttonhover" data-justify="space-evenly">Space Evenly</button>
+       </div>
+       <div class="control-group">
+           <label>Align Items</label>
+           <button id="alignStart" class="buttonhover" data-align="flex-start">Start</button>
+           <button id="alignCenter" class="buttonhover" data-align="center">Center</button>
+           <button id="alignEnd" class="buttonhover" data-align="flex-end">End</button>
+       </div>
+       <div class="control-group">
+           <label>Flex Grow</label>
+           <button id="flexGrowReset" class="buttonhover">Reset</button>
+           <button id="flexGrowAll" class="buttonhover">Grow All</button>
+           <div>
+               <label for="box1Grow">Box 1</label>
+               <input type="number" id="box1Grow" value="0">
+           </div>
+           <div>
+               <label for="box2Grow">Box 2</label>
+               <input type="number" id="box2Grow" value="0">
+           </div>
+           <div>
+               <label for="box3Grow">Box 3</label>
+               <input type="number" id="box3Grow" value="0">
+           </div>
+       </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
 
