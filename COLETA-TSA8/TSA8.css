@@ -1,1 +1,135 @@
+/* Common styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbd8dd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flexbox-container {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border: 10px solid #f55c99;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f7edaa;
+}
+
+.flexbox-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#box1 {
+    background-color: #7e84ec;
+}
+
+#box2 {
+    background-color: #cc5482;
+}
+
+#box3 {
+    background-color: #8962ed;
+}
+
+.flexbox-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fdf8d9;
+    border: 10px solid #f55c99;
+    border-radius: 10px;
+}
+
+label {
+    color: hsl(337, 46%, 55%); 
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.colored-label {
+    color: #f55c99; 
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+button {
+    background-color: #e67f9e;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttonhover {
+    background-color: #e67f9e;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buttonhover:hover {
+    background-color: #a25bc5;
+}
+
+.bn632-hover {
+    width: 160px;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #ed6ea0, #e71e79, #9f58ea, #d88bf4);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.bn632-hover:hover {
+    background-position: 100% 0;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #e1579c;
+    background-color: #f9dce0;
+    border-radius: 5px;
+}
 
