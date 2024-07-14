@@ -1,159 +1,202 @@
+
+
 /* Common styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
  }
  body {
-    background-image: url(BG.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif; /* Apply the font to the entire body */
+   background-image: url(BG.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Poppins', sans-serif;
  }
-
  .bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: %;
-    height: 100%;
-    background: url('https://media.giphy.com/media/9Tv1vyYypcwArlTFJZ/giphy.gif') center center / cover no-repeat;
-    z-index: -1; /* Make sure it stays behind other content */
-    opacity: 0.6; /* Adjust opacity to your preference */
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 70%;
+   height: 100%;
+   background: url() center center / cover no-repeat;
+   z-index: -1;
+   opacity: 0.6;
  }
  .container {
-    width: 90vw;
-    margin: 0 auto;
+   width: 90vw;
+   margin: 0 auto;
  }
  nav {
-    background-color: rgb(222, 112, 156);
-    color: antiquewhite;
-    padding: 10px 0;
-    height: fit-content;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: rgb(222, 112, 156);
+   color: antiquewhite;
+   padding: 10px 0;
+   height: fit-content;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
  }
  nav span {
-    color: #fbd5e3;
+   color: #fbd5e3;
  }
  nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
  }
  .logo {
-    font-size: 1.8rem;
-    margin-left: 5px;
+   font-size: 1.8rem;
+   margin-left: 5px;
  }
  .menu-list {
-    display: flex;
+   display: flex;
  }
  .menu-li {
-    list-style: none;
-    margin-left: 30px;
+   list-style: none;
+   margin-left: 30px;
  }
  .menu-li > a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgb(254, 231, 166);
-    position: relative; /* Ensure relative positioning for the ::before pseudo-element */
-    background-image: linear-gradient(to right, #de8fa4, #ffdaab 50%, #f4efd5 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
+   font-size: 1rem;
+   text-decoration: none;
+   color: rgb(254, 231, 166);
+   position: relative;
+   background-image: linear-gradient(to right, #de8fa4, #ffdaab 50%, #f4efd5 50%);
+   background-size: 200% 100%;
+   background-position: -100%;
+   display: inline-block;
+   padding: 5px 0;
+   position: relative;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.3s ease-in-out;
  }
  .menu-li > a:before {
-    content: '';
-    background: #e7aecc;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
+   content: '';
+   background: #e7aecc;
+   display: block;
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+   width: 0;
+   height: 3px;
+   transition: all 0.3s ease-in-out;
  }
  .menu-li > a:hover {
-    background-position: 0;
-    color: rgb(195, 53, 98); /* Adjust text color on hover */
+   background-position: 0;
+   color: rgb(195, 53, 98);
  }
  .menu-li > a:hover::before {
-    width: 100%;
+   width: 100%;
  }
  .aboutme {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 150px;
+   margin-left: 0;
+   margin-top: 10px;
+   margin-bottom: 150px;
  }
  .aboutme h1 {
-    font-size: 40px;
-    color: #f38a9c;
-    margin-top: 10px;
-    margin-bottom: 10px;
+   font-size: 40px;
+   color: #f38a9c;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .aboutme h1:hover {
+   color: #ec6685;
+   transform: scale(1.10);
+   text-shadow: 0 0 20px rgba(247, 86, 164, 0.7);
  }
  .aboutme span {
-    color: #ec6685;
+   color: #ec6685;
+   transform: scale(1.10);
  }
  .aboutme h2 {
-    font-size: 30px;
-    color: #ed9daa;
-    margin-top: 30px;
+   font-size: 30px;
+   color: #ed9daa;
+   margin-top: 30px;
  }
  .aboutme p {
-    font-size: 17px;
-    color: #732b47;
-    line-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif; /* Apply the Poppins font specifically to the paragraph */
+   font-size: 17px;
+   color: #732b47;
+   line-height: 20px;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   font-family: 'Poppins', sans-serif;
  }
  .aboutme a {
-    background-color: antiquewhite;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #e13074;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 15px;
-    /* Button hover effect styles */
-    background-image: linear-gradient(to right, #f0dda4 0%, #ea5495 51%, #EECDA3 100%);
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 30px #ea5893;
-    border-radius: 20px;
-    font-size: 15px;
+   background-color: antiquewhite;
+   padding: 10px 18px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #e13074;
+   display: inline-block;
+   margin: 30px 0;
+   border-radius: 15px;
+   background-image: linear-gradient(to right, #f0dda4 0%, #ea5495 51%, #EECDA3 100%);
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: rgb(255, 255, 255);
+   box-shadow: 0 0 30px #ea5893;
+   border-radius: 20px;
+   font-size: 15px;
  }
  .aboutme a:hover {
-    background-position: right center; /* Adjust gradient position */
-    color: #fff; /* Change text color on hover */
-    text-decoration: none; /* Remove underline on hover */
+   background-position: right center;
+ 
+   text-decoration: none;
  }
- /* Centering main image beside text */
  main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    padding: 0 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+   padding: 0 10%;
+   margin-top: 80px; /* Adjust margin to avoid overlap with fixed navbar */
  }
  .main-image {
-    height: 750px; /* Adjust the height as needed */
-    width: 750px;  /* Adjust the width as needed */
-    margin-right: 2px;
-    object-fit: cover;
+   height: 750px;
+   width: 750px;
+   margin-right: 2px;
+   object-fit: cover;
+ }
+ .section {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+ }
+ .social-icons {
+   display: inline-flex;
+   justify-content: center;
+   align-items: auto;
+   margin-top: 50px;
+   
+ }
+ .social-icons i {
+   margin: 20px;
+   margin-left: 10px;
+  }
+ .social-icons img {
+   width: 50px;
+   height: 50px;
+   transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+ }
+ 
+ 
+ .social-icons img:hover {
+   transform: scale(1.5); /* Example of hover effect - scale up */
+   box-shadow: 0 0 20px rgba(255, 84, 144, 0.7); /* Add glow effect */
+   border-radius: 100px;
+  
+   
  }
  
