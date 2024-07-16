@@ -1,5 +1,7 @@
 
 
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -237,7 +239,7 @@ main {
   align-items: center;
   flex: 1;
   padding: 0 10%;
-  margin-top: 80px; 
+  margin-top: 80px; /* Adjust margin to avoid overlap with fixed navbar */
 }
 .main-image {
   height: 750px;
@@ -265,11 +267,11 @@ main {
 .social-icons img {
   width: 75px;
   height: 75px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
 }
 .social-icons img:hover {
-  transform: scale(1.5); 
-  box-shadow: 0 0 20px rgba(255, 84, 144, 0.7); 
+  transform: scale(1.5); /* Example of hover effect - scale up */
+  box-shadow: 0 0 20px rgba(255, 84, 144, 0.7); /* Add glow effect */
   border-radius: 100px;
 }
 
@@ -388,15 +390,15 @@ main {
    color: white;
    transform: rotateY(180deg);
  }
-
+ /* Individual card styles */
  #card1 .front {
-   background: #f8c2cf;
-   color: #fbf3d0; 
+   background: #f8c2cf; /* Custom background for card 1 front */
+   color: #fbf3d0; /* Custom color for card 1 front */
    font-size: 50px;
    font-family:'Times New Roman', Times, serif;
  }
  #card1 .back {
-   background: #f9eedc; 
+   background: #f9eedc; /* Custom background for card 1 back */
  
  
    .h1{
@@ -412,7 +414,7 @@ main {
  
    .p{
    height: 100dvh;
-   line-height: 20px; 
+   line-height: 20px; /* Adjust line-height as needed */
    font-size: 15px;
    bottom: 0px;
    position: relative;
@@ -427,15 +429,15 @@ main {
  
  
  #card2 .front {
-   background: #e97594; 
-   color: #f7e0aa; 
+   background: #e97594; /* Custom background for card 2 front */
+   color: #f7e0aa; /* Custom color for card 2 front */
    font-size: 50px;
    font-family: 'Times New Roman', Times, serif;
  
  
  }
  #card2 .back {
-   background: #f5e8c7; 
+   background: #f5e8c7; /* Custom background for card 2 back */
    text-align: center;
    display: flex;
    flex-direction: column;
@@ -444,7 +446,7 @@ main {
  #card2 .back .primary,
  #card2 .back .secondary,
  #card2 .back .tertiary {
-   height: 100vh; 
+   height: 100vh; /* Corrected unit to vh */
    font-size: 13px;
    margin-top: 15px;
    bottom: 0;
@@ -456,7 +458,7 @@ main {
  #card2 .back .p,
  #card2 .back .pp,
  #card2 .back .ppp {
-   height: 100vh; 
+   height: 100vh; /* Corrected unit to vh */
    line-height: 20px; /* Adjust line-height as needed */
    font-size: 15px;
    bottom: 0;
@@ -465,18 +467,18 @@ main {
    color: #b12a5e;
  }
  #card3 .front {
-   background: #d64f78; 
-   color: #f9f8cb; 
+   background: #d64f78; /* Custom background for card 3 front */
+   color: #f9f8cb; /* Custom color for card 3 front */
    font-size: 50px;
    font-family: 'Times New Roman', Times, serif;
  }
  #card3 .back {
-   background: #f8f3d6; 
-   color: rgb(201, 55, 111); 
-   background-image: url('progressbar.gif'); 
-   background-size: cover; 
-   background-position: center; 
-   background-repeat: no-repeat; 
+   background: #f8f3d6; /* Fallback background color for card 3 back */
+   color: rgb(201, 55, 111); /* Custom color for card 3 back */
+   background-image: url('progressbar.gif'); /* Background image */
+   background-size: cover; /* Ensure the image covers the entire area */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
  }
 
  /**/
@@ -516,14 +518,15 @@ main {
     color: white;
     transform: rotateY(180deg);
   }
+  /* Individual card styles */
   #card1 .front {
-    background: #f8c2cf; 
-    color: #fbf3d0; 
+    background: #f8c2cf; /* Custom background for card 1 front */
+    color: #fbf3d0; /* Custom color for card 1 front */
     font-size: 50px;
     font-family:'Times New Roman', Times, serif;
   }
   #card1 .back {
-    background: #f9eedc; 
+    background: #f9eedc; /* Custom background for card 1 back */
   
   
     .h1{
@@ -539,7 +542,7 @@ main {
   
     .p{
     height: 100dvh;
-    line-height: 20px; 
+    line-height: 20px; /* Adjust line-height as needed */
     font-size: 15px;
     bottom: 0px;
     position: relative;
@@ -598,9 +601,9 @@ main {
     font-family: 'Times New Roman', Times, serif;
   }
   #card3 .back {
-    background: #f8f3d6; 
-    color: rgb(201, 55, 111); 
-    background-image: url('progressbar.gif'); 
+    background: #f8f3d6; /* Fallback background color for card 3 back */
+    color: rgb(201, 55, 111); /* Custom color for card 3 back */
+    background-image: url('progressbar.gif'); /* Background image */
     background-size: cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -613,7 +616,8 @@ main {
  }
  :root {
    --surface-color: #fed7e5;
-   --curve: 20; 
+   --curve: 20; /* Reduced curve for smaller cards */
+ }
  * {
    box-sizing: border-box;
  }
@@ -624,16 +628,16 @@ main {
    padding: 0;
  }
  .section {
-   padding-top: 100px; 
-   padding-bottom: 20px; 
+   padding-top: 100px; /* Ensure space above the works-section */
+   padding-bottom: 20px; /* Ensure space below the works-section */
  }
  .work-card-container {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
    gap: 10px;
-   max-width: 1200px; 
-   margin: 0 auto;
+   max-width: 1200px; /* Adjust max-width as needed */
+   margin: 0 auto; /* Center the container */
    padding-bottom: 0;
  }
  .work-card {
@@ -645,7 +649,7 @@ main {
    text-decoration: none;
    overflow: hidden;
    transition: transform 0.3s ease-in-out;
-   margin-bottom: 2rem; 
+   margin-bottom: 2rem; /* Add margin between cards */
  }
 
  @media (max-width:650px){
@@ -654,8 +658,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    max-width: 650px; 
-    margin: 0 auto; 
+    max-width: 650px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container */
     padding-bottom: 0;
   }
   .work-card {
@@ -667,26 +671,26 @@ main {
     text-decoration: none;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem; /* Add margin between cards */
   }
  }
  .work-card:hover {
    transform: scale(1.10);
  }
  .work-card img {
-   width: auto; 
-   height: 200px; 
+   width: auto; /* Ensures the image fills the width of its parent */
+   height: 200px; /* Automatically adjusts height while maintaining aspect ratio */
  
  
    border-radius: calc(var(--curve) * 1px) calc(var(--curve) * 1px) 0 0; /* Adjust border radius for image */
   }
  .work-card h2 {
-   font-size: 1.2em; 
+   font-size: 1.2em; /* Slightly smaller font size */
    color: #de8fa4;
    margin: 15px 20px 0;
  }
  .work-card p {
-   font-size: 0.9em; 
+   font-size: 0.9em; /* Smaller font size for description */
    color: #732b47;
    margin: 15px 20px;
  }
@@ -710,6 +714,7 @@ main {
 
 
 
+ /* Services Section */
  .services-section {
    text-align: center;
    padding-bottom: 80px;
@@ -722,12 +727,13 @@ main {
    color: #da7099;
    text-align: center;
    margin-top: 20px;
-   text-shadow: 0 0 10px rgba(123, 25, 62, 0.6); 
+   text-shadow: 0 0 10px rgba(123, 25, 62, 0.6); /* Updated with rgba for transparency */
+   /* Adding transition for smooth effect */
    transition: transform 0.3s ease;
 }
 
 .myservices:hover {
-   transform: scale(1.5); 
+   transform: scale(1.5); /* Scale up by 10% on hover */
 }
 
 .myservices span {
@@ -787,14 +793,14 @@ main {
    background-color: #eb9fbf;
    color: #fff3f8;
    transform: rotateY(0deg);
-   z-index: 2; 
+   z-index: 2; /* Ensure the front side is above by default */
 }
 
 .service-card .back {
    background-color: #ffdde7;
    color: #cf3b74;
    transform: rotateY(180deg);
-   z-index: 1; 
+   z-index: 1; /* Ensure the back side is below by default */
 }
 
 .service-card .inner {
@@ -875,10 +881,11 @@ main {
    transition: transform 0.6s ease-in-out;
 }
 
+/* New CSS to align buttons beside each other */
 .button-container {
    display: flex;
    justify-content: center;
-   gap: 10px; 
+   gap: 10px; /* Adjust spacing between buttons as needed */
    margin-bottom: 20px; /* Added bottom margin */
 }
 
@@ -1059,16 +1066,17 @@ main {
       transition: transform 0.6s ease-in-out;
    }
    
+   /* New CSS to align buttons beside each other */
    .button-container {
       display: flex;
       justify-content: center;
-      gap: 10px; 
+      gap: 10px; /* Adjust spacing between buttons as needed */
       margin-bottom: 20px; /* Added bottom margin */
    }
    
    .button-container .close-btn,
    .button-container .seemore-btn {
-      margin-top: 0; 
+      margin-top: 0; /* Remove top margin if necessary */
    }
   
   }
@@ -1077,6 +1085,7 @@ main {
 }
 
 
+/*CONTACT SECTION*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
@@ -1391,6 +1400,7 @@ textarea.input {
   }
 }
 
+/* Existing CSS styles up to the contact section */
 
 @media (max-width: 850px) {
   .contact-section {
@@ -1626,6 +1636,7 @@ textarea.input {
   
 }
 
+ /* Footer styles */
  footer {
    background-color: #c85281;
    color: #fff;
@@ -1642,5 +1653,6 @@ textarea.input {
  }
  
  
+
 
 
